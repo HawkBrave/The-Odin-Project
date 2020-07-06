@@ -1,6 +1,7 @@
 html, body {
     height: 100%;
     min-height: 100%;
+    margin: 0;
 }
 
 body {
@@ -28,14 +29,33 @@ main {
 }
 
 .nav {
-    padding: 0 15px 0 0;
+    padding: 5px 10px;
+    font-size: 14px;
 }
 
 #apps {
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     color: grey;
     fill: grey;
+    margin-top: 5px;
+}
+
+@keyframes apps-animation {
+    0% {
+        border-radius: 50%;
+    } 
+    100% {
+        border-radius: 50%;
+        background-color: rgba(200,200,200,0.72);
+        box-shadow: 0px 0px 0px 5px rgba(200,200,200,0.72); 
+    }
+}
+
+#apps:hover {
+    animation-name: apps-animation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
 
 #sign-in {
@@ -68,4 +88,47 @@ main {
     border-radius: 4px;
     padding: 8px 16px;
     margin: 0 5px;
+}
+
+footer {
+    background-color: rgba(220, 220, 220, 0.5);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+#country-info {
+    padding: 11px;
+    display: flex;
+    border-top: solid 1px;
+    border-color: rgba(200, 200, 200, 1);
+    color: grey;
+}
+
+#other-info {
+    display: flex;
+    padding: 11px;
+    justify-content: space-between;
+    border-top: solid 1px;
+    border-color: rgba(200, 200, 200, 1);
+}
+
+.left {
+    display: flex;
+}
+.right {
+    display: flex;
+}
+.footer-left {
+    padding-right: 15px;
+}
+.footer-right {
+    padding-right: 15px;
+}
+footer a {
+    color: grey;
+}
+footer a:hover {
+    text-decoration: underline;
 }
