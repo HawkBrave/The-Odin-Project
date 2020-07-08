@@ -1,134 +1,141 @@
-html, body {
-    height: 100%;
-    min-height: 100%;
-    margin: 0;
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+  margin: 0;
 }
 
 body {
-    font-family: sans-serif;
+  font-family: sans-serif;
 }
 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    flex-basis: auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-basis: auto;
 }
 
 main {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 150px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 150px;
 }
 
 .nav {
-    padding: 5px 10px;
-    font-size: 14px;
+  padding: 5px 10px;
+  font-size: 14px;
 }
 
 #apps {
-    height: 25px;
-    width: 25px;
-    color: grey;
-    fill: grey;
-    margin-top: 5px;
+  height: 25px;
+  width: 25px;
+  color: grey;
+  fill: grey;
+  margin-top: 5px;
 }
 
 @keyframes apps-animation {
-    0% {
-        border-radius: 50%;
-    } 
-    100% {
-        border-radius: 50%;
-        background-color: rgba(200,200,200,0.72);
-        box-shadow: 0px 0px 0px 5px rgba(200,200,200,0.72); 
-    }
+  0% {
+    border-radius: 50%;
+  }
+
+  100% {
+    border-radius: 50%;
+    background-color: rgba(200, 200, 200, 0.72);
+    box-shadow: 0px 0px 0px 5px rgba(200, 200, 200, 0.72);
+  }
 }
 
 #apps:hover {
-    animation-name: apps-animation;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
+  animation-name: apps-animation;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 
 #sign-in {
-    width: 80px;
-    height: 30px;
-    background-color: #4285f4;
-    color: white;
-    font-weight: 700;
-    border: 0;
+  width: 80px;
+  height: 30px;
+  background-color: #4285f4;
+  color: white;
+  font-weight: 700;
+  border: 0;
 }
 
 #google-logo {
-    max-width: 272px;
-    max-height: 92px;
+  max-width: 272px;
+  max-height: 92px;
 }
 
 #search-box {
-    max-width: 449px;
-    min-width: 449px;
-    width: auto;
-    border-radius: 40px;
-    border: 2px solid lightgrey;
-    padding: 7px 5px;
-    margin: 10px;
+  max-width: 449px;
+  min-width: 449px;
+  width: auto;
+  border-radius: 40px;
+  border: 2px solid lightgrey;
+  padding: 7px 5px;
+  margin: 10px;
 }
 
 .button {
-    background-color: rgb(242, 242, 242);
-    border: 0;
-    border-radius: 4px;
-    padding: 8px 16px;
-    margin: 0 5px;
+  background-color: rgb(242, 242, 242);
+  border: 0;
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin: 0 5px;
 }
 
 footer {
-    background-color: rgba(220, 220, 220, 0.5);
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+  background-color: rgba(220, 220, 220, 0.5);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 #country-info {
-    padding: 11px;
-    display: flex;
-    border-top: solid 1px;
-    border-color: rgba(200, 200, 200, 1);
-    color: grey;
+  padding: 11px;
+  display: flex;
+  border-top: solid 1px;
+  border-color: rgba(200, 200, 200, 1);
+  color: grey;
 }
 
 #other-info {
-    display: flex;
-    padding: 11px;
-    justify-content: space-between;
-    border-top: solid 1px;
-    border-color: rgba(200, 200, 200, 1);
+  display: flex;
+  padding: 11px;
+  justify-content: space-between;
+  border-top: solid 1px;
+  border-color: rgba(200, 200, 200, 1);
 }
 
 .left {
-    display: flex;
+  display: flex;
 }
+
 .right {
-    display: flex;
+  display: flex;
 }
+
 .footer-left {
-    padding-right: 15px;
+  padding-right: 15px;
 }
+
 .footer-right {
-    padding-right: 15px;
+  padding-right: 15px;
 }
+
 footer a {
-    color: grey;
+  color: grey;
 }
+
 footer a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
