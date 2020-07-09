@@ -14,12 +14,14 @@
       You: <span id="your-score">0</span><br>
       Computer: <span id="computer-score">0</span>
     </div>
-    <legend>Choose to Play:</legend>
-    <label for="rock"><input id="rock" type="radio" name="choice" value="rock">Rock</label>
-    <label for="paper"><input id="paper" type="radio" name="choice" value="paper">Paper</label>
-    <label for="scissor"><input id="scissor" type="radio" name="choice" value="scissor">Scissor</label>
-    <br>
-    <button id="submit">Play</button>
+    <div id="choice-area">
+      <legend>Choose to Play:</legend>
+      <label for="rock"><input id="rock" type="radio" name="choice" value="rock"><span>Rock</span></label>
+      <label for="paper"><input id="paper" type="radio" name="choice" value="paper"><span>Paper</span></label>
+      <label for="scissor"><input id="scissor" type="radio" name="choice" value="scissor"><span>Scissor</span></label>
+      <br>
+      <button id="submit">Play</button>
+    </div>
     <div id="display"></div>
   </main>
   <script src="script.js"></script>

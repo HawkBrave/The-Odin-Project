@@ -1,0 +1,68 @@
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  letter-spacing: 1px;
+  background-color: black;
+  scrollbar-color: black;
+  color: white;
+}
+
+main {
+  padding-top: 170px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+#scores {
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+#choice-area {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#choice-area label {
+  width: 90px;
+  height: 50px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: white;
+  text-align: center;
+  justify-self: center;
+}
+
+#choice-area label input {
+  display: none;
+}
+
+#choice-area label span {
+  position: relative;
+  color: black;
+  top: 13px;
+}
+
+input[type="radio"]:checked+span {
+  font-weight: bold;
+  font-size: larger;
+  letter-spacing: 2px;
+}
+
+button {
+  background-color: white;
+  border: 0;
+  padding: 10px;
+  font-family: inherit;
+  font-size: 20px;
+}
+
+button:hover {
+  background-color: lightgrey;
+}
