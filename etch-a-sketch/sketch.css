@@ -1,0 +1,35 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  margin-left: -5px;
+}
+
+:root {
+  --tile-count-row: 64;
+  --tile-count-col: 64;
+}
+
+#restart {
+  background-color: red;
+  border-color: white;
+  color: white;
+  width: 100%;
+  height: 20px;
+}
+
+.container {
+  display: grid;
+  height: 100%;
+  grid-template-rows: repeat(var(--tile-count-row), 1fr);
+  grid-template-columns: repeat(var(--tile-count-col), 1fr);
+}
+
+.container div {
+  background-color: lightgrey;
+}
+
+.container div:hover {
+  background-color: grey;
+}
