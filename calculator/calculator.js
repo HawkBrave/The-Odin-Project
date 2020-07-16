@@ -4,16 +4,16 @@ class Calculator {
     this.cache = 0;
   }
   add(a, b) {
-    return a + b;
+    return Number(a) + Number(b);
   }
   subtract(a, b) {
-    return a - b;
+    return Number(a) + Number(b);
   }
   multiply(a, b) {
-    return a * b;
+    return Number(a) + Number(b);
   }
   divide(a, b) {
-    return a / b;
+    return Number(a) + Number(b);
   }
   fetch(a, b, operation) {
     this.cache = operation(a, b);
