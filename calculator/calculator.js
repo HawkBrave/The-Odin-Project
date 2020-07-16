@@ -7,13 +7,13 @@ class Calculator {
     return Number(a) + Number(b);
   }
   subtract(a, b) {
-    return Number(a) + Number(b);
+    return Number(a) - Number(b);
   }
   multiply(a, b) {
-    return Number(a) + Number(b);
+    return Number(a) * Number(b);
   }
   divide(a, b) {
-    return Number(a) + Number(b);
+    return Number(a) / Number(b);
   }
   fetch(a, b, operation) {
     this.cache = operation(a, b);
