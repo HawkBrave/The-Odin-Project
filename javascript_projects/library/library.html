@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Stack</title>
+  <link rel="stylesheet" href="library.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <button id="dump-books" onclick="">Dump Books</button>
+  <button id="add-book" onclick="">Lay a Book</button>
+  <div id="books" style="display: none;"></div>
+  <form id="book-form" style="display: none;" onsubmit="submition()">
+    <legend>Enter Book Information</legend>
+    <label for="title"><input type="text" id="title" name="title">Title</label><br>
+    <label for="author"><input type="text" id="author" name="author">Author</label><br>
+    <label for="publishYear"><input type="text" id="publishYear" name="publishYear">Year Published</label><br>
+    <label for="rating"><input type="text" id="rating" name="rating">Rating</label><br>
+    <button type="submit">Lay</button><br>
+  </form>
+  <script src="library.js"></script>
+</body>
+
+</html>
